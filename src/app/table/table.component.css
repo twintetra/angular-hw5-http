@@ -1,0 +1,17 @@
+table {
+  width: 100%;
+}
+
+.row-table {
+  cursor: pointer;
+}
+
+.row-table:hover {
+  background-color: antiquewhite;
+}
+
+.input-search {
+  font-size: 20px;
+  padding: 5px;
+  margin: 10px;
+}
