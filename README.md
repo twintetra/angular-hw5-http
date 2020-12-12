@@ -1,27 +1,18 @@
-# Http
+## Взаимодействие с сервером - вывод и преобразование данных
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+Вывести на экран информацию по запросу https://jsonplaceholder.typicode.com/users Заполнить таблицу из 3-х полей и сделать фронтовый поиск по полям по тексту (по вхождению) под каждым заголовком. С использованием выпадающих списков по контексту столбца с галками (https://material.angular.io/components/checkbox/overview).
 
-## Development server
+Столбцы:
+- Имя    "name": "Leanne Graham", "username": "Bret", С конкатенировать строку: name (username)
+- Почта    "email": "Sincere@april.biz",
+- Адрес    "address": 
+      "zipcode": "92998-3874",      
+      "city": "Gwenborough"
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+С конкатенировать строку адреса используя интерцептор (миделвеер для запроса): zipcode + city + street + suite
 
-## Code scaffolding
+По клику на строку открывать координаты места расположения в модальном окне на карте. Карту можно подключить одной из библиотек: https://habr.com/ru/post/318600/ или https://techrocks.ru/2019/10/05/best-javascript-maps-api-and-libraries/
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+[Взаимодействие с сервером](https://stackblitz.com/github/twintetra/angular-hw5-http)
